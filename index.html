@@ -13,6 +13,7 @@
         rel="stylesheet">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+    <!-- <link rel="stylesheet" href="./styles/modal.css"> -->
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 
@@ -23,8 +24,8 @@
 
             <nav>
                 <ul class="main-nav list">
-                    <li class="item"><a href="./index.html" class="main-link">Studio</a></li>
-                    <li class="item"><a href="./portfolio.html" class="main-link">Portfolio</a></li>
+                    <li class="item"><a href="./index.html" class="main-link current">Studio</a></li>
+                    <li class="item"><a href="./portfolio.html" class="main-link ">Portfolio</a></li>
                     <li class="item"><a href="" class="main-link">Contacts</a></li>
                 </ul>
             </nav>
@@ -46,7 +47,18 @@
         <section class="hero">
             <div class="container">
                 <h1 class="hero-title">Effective Solutions for Your Business</h1>
-                <button class="hero-btn" type="button">Order Service</button>
+                <button class="hero-btn" type="button" data-modal-open>Order Service</button>
+            </div>
+
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal">
+                    <p></p>
+                    <button class="btn-close" type="button" data-modal-close>
+                        <svg width="8" height="8">
+                            <use href="./images/icons.svg#icon-close-black-18dp"></use>
+                        </svg>
+                    </button>
+                </div>
             </div>
         </section>
 
