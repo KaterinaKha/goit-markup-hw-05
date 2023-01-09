@@ -332,6 +332,7 @@ img {
 .item-description {
 	line-height: 1.5;
 	letter-spacing: 0.02em;
+	color: var(--main-color);
 }
 
 /* Customers */
@@ -433,7 +434,8 @@ img {
 	transform: translateY(100%);
 }
 
-.portfolio-list:hover .overlay .portfolio-list:focus .overlay {
+.portfolio-link:hover .overlay,
+.portfolio-link:focus .overlay {
 	transform: translateY(0%);
 }
 
